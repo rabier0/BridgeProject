@@ -6,7 +6,7 @@ import zoo.model.habitat.Habitat;
 import zoo.service.AnimalFactory;
 import zoo.service.ZooService;
 
-/** Connects GUI events to the ZooService (keeps the GUI dumb). */
+/** Connects GUI events to the ZooService */
 public class ZooController {
     private final ZooService zoo;
     private final ZooFrame frame;

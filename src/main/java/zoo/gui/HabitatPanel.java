@@ -7,7 +7,7 @@ import zoo.model.habitat.Habitat;
 
 /** Displays each habitat and who lives there. */
 public class HabitatPanel extends JPanel {
-    private final JTextArea display = new JTextArea(25, 40);
+    private final JTextArea display = new JTextArea(25, 20);
 
     public HabitatPanel() {
         setBorder(BorderFactory.createTitledBorder("Habitats"));
@@ -25,5 +25,7 @@ public class HabitatPanel extends JPanel {
             }
         }
         display.setText(sb.toString());
+
+        
     }
 }

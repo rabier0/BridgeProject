@@ -3,7 +3,7 @@ package zoo.gui;
 import java.awt.BorderLayout;
 import javax.swing.JFrame;
 
-/** Main window. Holds the panels; no business logic here. */
+/** Main window that holds the panels */
 public class ZooFrame extends JFrame {
     private final AnimalFormPanel formPanel = new AnimalFormPanel();
     private final HabitatPanel habitatPanel = new HabitatPanel();

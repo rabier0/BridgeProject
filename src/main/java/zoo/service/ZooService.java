@@ -6,7 +6,7 @@ import zoo.chain.HabitatHandler;
 import zoo.model.animal.Animal;
 import zoo.model.habitat.Habitat;
 
-/** Core app logic; the GUI talks only to this class. */
+/** Core app logic - the GUI talks only to this class. */
 public class ZooService {
     private final HabitatChainBuilder builder = new HabitatChainBuilder();
     private final HabitatHandler chainHead = builder.build();

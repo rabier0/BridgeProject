@@ -1,6 +1,6 @@
 package zoo.model.environment;
 
-/** BRIDGE - Concrete Implementor. */
+/** BRIDGE - Concrete Implementor */
 public class AirEnvironment implements Environment {
     @Override
     public EnvironmentType getType() { return EnvironmentType.AIR; }
