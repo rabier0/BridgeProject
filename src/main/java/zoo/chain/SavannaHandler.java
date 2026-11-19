@@ -10,7 +10,6 @@ public class SavannaHandler extends HabitatHandler {
 
     @Override
     protected boolean canHandle(Animal animal) {
-        // TODO: refine rule
         return animal.hasBackbone() && animal.getEnvironment().getType() == EnvironmentType.LAND;
     }
 }

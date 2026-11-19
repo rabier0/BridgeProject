@@ -1,7 +1,6 @@
 package zoo.chain;
 
 import zoo.model.animal.Animal;
-import zoo.model.environment.EnvironmentType;
 import zoo.model.habitat.Habitat;
 
 /** CHAIN OF RESPONSIBILITY - Concrete Handler: catch-all at the end of the chain */
@@ -11,6 +10,9 @@ public class QuarantineHandler extends HabitatHandler {
     @Override
     protected boolean canHandle(Animal animal) {
         // TODO: refine rule
+        // if (isFull()) {
+        //     throw new IllegalArgumentException(animal.getName() + "is already full!");
+        // }
         return true;
     }
 }

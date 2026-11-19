@@ -10,7 +10,6 @@ public class AquariumHandler extends HabitatHandler {
 
     @Override
     protected boolean canHandle(Animal animal) {
-        // TODO: refine rule
         return animal.getEnvironment().getType() == EnvironmentType.WATER;
     }
 }

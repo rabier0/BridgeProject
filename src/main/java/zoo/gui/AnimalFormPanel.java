@@ -1,9 +1,9 @@
 package zoo.gui;
 
+import java.awt.Color;
 import java.awt.GridLayout;
 import javax.swing.*;
 import zoo.model.environment.EnvironmentType;
-
 /** Inputs for creating a new animal: name, species, environment. */
 public class AnimalFormPanel extends JPanel {
     private final JTextField nameField = new JTextField(12);
@@ -15,11 +15,14 @@ public class AnimalFormPanel extends JPanel {
     public AnimalFormPanel() {
         setLayout(new GridLayout(0, 1, 4, 4));
         setBorder(BorderFactory.createTitledBorder("New Animal"));
+        setBackground(new Color(224, 206, 175));
         add(new JLabel("Name:")); add(nameField);
         add(new JLabel("Species:")); add(speciesBox);
         add(new JLabel("Environment:")); add(envBox);
         add(admitButton);
-
+    
+        
+        //admitButton.setForeground(button);
         // Auto-select appropriate environment when species changes
         speciesBox.addActionListener(e -> {
             String species = (String) speciesBox.getSelectedItem();

@@ -22,6 +22,10 @@ public class Habitat {
 
     public void addAnimal(Animal animal) {
         // TODO: decide what happens when full (exception? return false?)
+        // if (isFull()) {
+        //     throw new IllegalArgumentException("")
+        // }
         residents.add(animal);
+
     }
 }
