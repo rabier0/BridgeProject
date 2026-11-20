@@ -13,7 +13,6 @@ public class Eagle extends Vertebrate {
 
     @Override
     public String describe() {
-        // TODO: flesh out
         return getName() + " the Eagle - " + move();
     }
 }

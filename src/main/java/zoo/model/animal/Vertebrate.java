@@ -11,5 +11,5 @@ public abstract class Vertebrate extends Animal {
     @Override
     public boolean hasBackbone() { return true; }
 
-    // TODO: vertebrate-specific fields/behavior (e.g., body temperature regulation)
+   
 }

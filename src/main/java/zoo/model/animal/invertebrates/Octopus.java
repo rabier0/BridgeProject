@@ -13,7 +13,6 @@ public class Octopus extends Invertebrate {
 
     @Override
     public String describe() {
-        // TODO: flesh out
         return getName() + " the Octopus - " + move();
     }
 }

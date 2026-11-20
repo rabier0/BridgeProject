@@ -21,10 +21,9 @@ public class Habitat {
     public List<Animal> getResidents() { return Collections.unmodifiableList(residents); }
 
     public void addAnimal(Animal animal) {
-        // TODO: decide what happens when full (exception? return false?)
-        // if (isFull()) {
-        //     throw new IllegalArgumentException("")
-        // }
+        if (isFull()) {
+            throw new IllegalStateException("Habitat is full");
+        }
         residents.add(animal);
 
     }

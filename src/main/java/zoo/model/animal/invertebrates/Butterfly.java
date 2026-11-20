@@ -13,7 +13,6 @@ public class Butterfly extends Invertebrate {
 
     @Override
     public String describe() {
-        // TODO: describe the butterfly's unique characteristics
         return getName() + " the Butterfly - " + move();
 
     }

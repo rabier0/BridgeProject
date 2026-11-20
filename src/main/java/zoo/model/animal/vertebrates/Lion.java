@@ -13,7 +13,6 @@ public class Lion extends Vertebrate {
 
     @Override
     public String describe() {
-        // TODO: flesh out
         return getName() + " the Lion - " + move();
     }
 }

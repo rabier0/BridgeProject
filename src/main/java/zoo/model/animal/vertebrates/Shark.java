@@ -13,7 +13,6 @@ public class Shark extends Vertebrate {
 
     @Override
     public String describe() {
-        // TODO: flesh out
         return getName() + " the Shark - " + move();
     }
 }

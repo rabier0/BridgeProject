@@ -9,10 +9,9 @@ public class QuarantineHandler extends HabitatHandler {
 
     @Override
     protected boolean canHandle(Animal animal) {
-        // TODO: refine rule
-        // if (isFull()) {
-        //     throw new IllegalArgumentException(animal.getName() + "is already full!");
-        // }
+        if (habitat.isFull()) {
+            throw new IllegalStateException("Habitat is full");
+        }
         return true;
     }
 }

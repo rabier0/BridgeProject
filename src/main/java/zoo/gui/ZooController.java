@@ -30,7 +30,7 @@ public class ZooController {
         }
         Animal animal = AnimalFactory.create(form.getSpecies(), form.getAnimalName(), form.getEnvironmentType());
         Habitat placed = zoo.admit(animal);
-        // TODO: nicer feedback / status bar
+      
         JOptionPane.showMessageDialog(frame, animal.getName() + " placed in " + placed.getName());
         form.clear();
         Color back = new Color(224, 206, 175);

@@ -23,7 +23,7 @@ public class HabitatPanel extends JPanel {
     }   
 
     public void refresh(List<Habitat> habitats) {
-        // TODO: replace with JTree / JList / cards for a nicer look
+
         StringBuilder sb = new StringBuilder();
         for (Habitat h : habitats) {
             sb.append(h.getName()).append(":\n");

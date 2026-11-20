@@ -11,5 +11,5 @@ public abstract class Invertebrate extends Animal {
     @Override
     public boolean hasBackbone() { return false; }
 
-    // TODO: invertebrate-specific fields/behavior (e.g., exoskeleton, number of legs)
+    
 }

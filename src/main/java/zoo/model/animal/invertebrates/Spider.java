@@ -13,7 +13,6 @@ public class Spider extends Invertebrate {
 
     @Override
     public String describe() {
-        // TODO: flesh out
         return getName() + " the Spider - " + move();
     }
 }

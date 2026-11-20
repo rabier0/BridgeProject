@@ -4,8 +4,8 @@ import zoo.model.animal.Animal;
 import zoo.model.habitat.Habitat;
 
 /**
- * CHAIN OF RESPONSIBILITY - Handler.
- * Each handler decides if it can house the animal; if not, passes it on.
+ * CHAIN OF RESPONSIBILITY - Handler
+ * Each handler decides if it can house the animal - if not, passes it on.
  */
 public abstract class HabitatHandler {
     private HabitatHandler next;
@@ -30,7 +30,7 @@ public abstract class HabitatHandler {
         if (next != null) {
             return next.place(animal);
         }
-        return null; // TODO: end of chain - should never hit if QuarantineHandler is last
+        throw new IllegalStateException("No suitable habitat found for " + animal.getName());
     }
 
     public Habitat getHabitat() { return habitat; }

@@ -21,6 +21,4 @@ classes like `LandVertebrate`, `WaterInvertebrate`, ... for every combination.
 
 Why: placement rules live in separate handlers; adding a habitat = add a handler, no edits to existing code.
 
-## TODO
-- UML class diagram (put in `docs/uml/`)
-- Sequence diagram for "Admit Animal"
+
