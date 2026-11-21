@@ -40,10 +40,8 @@ model/
 │   └── AirEnvironment.java   Concrete Implementor
 └── habitat/         ← NOT part of the Bridge
     ├── Habitat.java
-    ├── LandHabitat.java (add these later)
-    ├── WaterHabitat.java
-    └── AirHabitat.java
 ```
+
 
 ## To Run the Project
 
